@@ -1,0 +1,13 @@
+Name: SETSMACRO
+Dialog-Specs: SETSMACRO.spd
+Command-Specs: SETSMACRO.xml
+Code-Files: SETSMACRO.py
+Misc-Files: markdown.html,extsyntax.css,IBMdialogicon.png
+Summary: Create syntax list from Variable Set definitions
+Description: This package pastes the definitions of one or more variab
+ le sets into a file so that the definitions can be used in syntax
+Author: JKP, IBM SPSS
+Version: 1.2.0
+Product-Version: 18
+Date: 9/2008
+Plugins: Python
