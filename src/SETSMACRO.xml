@@ -1,0 +1,16 @@
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by Jon Peck (SPSS Inc.) -->
+<Command xmlns="http://xml.spss.com/spss/extension" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="extension-1.0.xsd" Name="SETSMACRO" Language="Python">
+	<Subcommand Name="" IsArbitrary="False" Occurrence="Optional">
+		<Parameter Name="SETS" ParameterType="TokenList"/>
+		<Parameter Name="SEPARATOR" ParameterType="QuotedString"/>
+		<Parameter Name="MACRONAME" ParameterType="QuotedString"/>
+		<Parameter Name="FAIL" ParameterType="Keyword">
+			<EnumValue Name="NO"/>
+			<EnumValue Name="YES"/>
+		</Parameter>
+	</Subcommand>
+	<Subcommand Name="SAVE">
+		<Parameter Name="OUTFILE" ParameterType="OutputFile"/>
+	</Subcommand>
+	<Subcommand Name="HELP" Occurrence="Optional"/>
+</Command>
