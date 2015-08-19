@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>SETSMACRO Extension Command</title>
+
+<link rel="stylesheet" type="text/css" href="extsyntax.css" />
+
+
+
+
+
+</head>
+
+<body>
+<h1>SETSMACRO Extension Command</h1>
+
+<p>Create macro variable for one or more variable sets.</p>
+<div class="syntax">
+<p>SETSMACRO SETS=<em>list of variable set names</em>
+MACRONAME=<em>name</em> FAIL=NO<sup>&#42;&#42;</sup> or YES SEPARATOR=&ldquo;<em>string</em>&rdquo;  </p>
+
+<p>/SAVE OUTFILE=&ldquo;<em>file specification</em>&rdquo;</p>
+
+<p>/HELP.</p>
+
+<p><sup>&#42;</sup> Required<br/>
+<sup>&#42;&#42;</sup> Default</p>
+</div>
+<p>/HELP prints this help and does nothing else.</p>
+
+
+
+<pre class="example"><code>SETSMACRO SETS=stocks bonds MACRONAME=!financial.
+</code></pre>
+
+<p><strong>SETS</strong> specifies a list of set names to retrieve.  The list is not case sensitive.
+If it is omitted, all sets are retrieved.</p>
+
+<p><strong>MACRONAME</strong> optionally gives a name for a macro whose value will be all the variable names
+in the sets retrieved.  Duplicate variables names are ignored.</p>
+
+<p><strong>SEPARATOR</strong> specifies the character(s) to be used between names
+and defaults to a blank.</p>
+
+<p><strong>FAIL</strong> specifies whether to raise an error if any requested set is not found.</p>
+
+<p><strong>OUTFILE</strong> can specify a filename to receive the list of variables found in the sets retrieved.
+If MACRONAME is specified, it will contain the syntax for defining the macro.  Otherwise it
+holds just the names.</p>
+
+<p>&copy; Copyright IBM Corp. 1989, 2014</p>
+
+</body>
+
+</html>
+
