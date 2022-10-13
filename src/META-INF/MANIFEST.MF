@@ -1,4 +1,5 @@
 Name: SETSMACRO
+Display-Name: Variable Set Definitions
 Dialog-Specs: SETSMACRO.spd
 Command-Specs: SETSMACRO.xml
 Code-Files: SETSMACRO.py
